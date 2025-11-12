@@ -1,5 +1,9 @@
 # **Federated Querying with Trino (SQL Server + PostgreSQL)**
 
+Trino is a fast, distributed SQL query engine designed for high-performance big data analytics. Unlike traditional database systems, Trino decouples the query engine from data storage, allowing you to perform federated queries across disparate sources—such as SQL Server, PostgreSQL, Kafka, and S3—without moving or copying the data (zero-ETL). Originally born out of Facebook (Meta) to handle massive scale, it enables you to access all your data using SQL.
+
+Official Website: https://trino.io/
+
 This guide demonstrates how to use **Trino** (formerly PrestoSQL) to run a single SQL query that joins data across two different databases: **Microsoft SQL Server** (storing User/Investor data) and **PostgreSQL** (storing Stock Orders).  
 We will conclude with a **Python** script to execute this federated query programmatically.
 
