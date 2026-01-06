@@ -102,13 +102,12 @@ When running uhyve, we must specify the network configuration so it knows to use
 # HERMIT_IP: The IP of the unikernel  
 # HERMIT_GATEWAY: The IP of your host (the tap0 interface)  
 HERMIT_IP=10.0.5.2 HERMIT_GATEWAY=10.0.5.1 uhyve --netif tap0 target/x86_64-unknown-hermit/release/hermit-web-server
-
+```
 ## **Verification**
 
 Open a new terminal on your host machine and try to reach the unikernel:
 
 ```Bash
-
 curl http://10.0.5.2:8080  
 ```  
 Expected Output:  
